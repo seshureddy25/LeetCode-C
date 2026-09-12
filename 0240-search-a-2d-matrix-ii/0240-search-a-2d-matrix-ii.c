@@ -10,7 +10,6 @@ bool searchMatrix(int** matrix, int matrixSize, int* matrixColSize, int target){
         while(left <= right)
         {
             int mid = left + (right - left) / 2;
-
             if(matrix[i][mid] == target)
                 return true;
 
