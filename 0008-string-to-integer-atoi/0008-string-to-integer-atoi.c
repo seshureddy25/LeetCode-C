@@ -1,6 +1,3 @@
-#include <ctype.h>
-#include <limits.h>
-
 int myAtoi(char* s)
 {
     int i = 0;
