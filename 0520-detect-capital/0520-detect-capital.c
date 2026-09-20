@@ -7,7 +7,5 @@ bool detectCapitalUse(char* word) {
             upper++;
     }
 
-    return upper == 0 ||
-           upper == len ||
-           (upper == 1 && word[0] >= 'A' && word[0] <= 'Z');
+    return upper == 0 || upper == len || (upper == 1 && word[0] >= 'A' && word[0] <= 'Z');
 }
