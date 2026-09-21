@@ -14,8 +14,9 @@ void fun(int *nums, int start, int end,int **result, int *returnSize, int *retur
     if (start == end)
     {
         result[*returnSize] = malloc(end * sizeof(int));
-        for (int i = 0; i < end; i++) result[*returnSize][i] = nums[i];
-            returnColumnSizes[*returnSize] = end;
+        for (int i = 0; i < end; i++) 
+            result[*returnSize][i] = nums[i];
+        returnColumnSizes[*returnSize] = end;
         (*returnSize)++;
         return;
     }
@@ -23,8 +24,7 @@ void fun(int *nums, int start, int end,int **result, int *returnSize, int *retur
     for (int i = start; i < end; i++)
     {
         swap(&nums[start], &nums[i]);
-        fun(nums, start + 1, end,
-            result, returnSize, returnColumnSizes);
+        fun(nums, start + 1, end, result, returnSize, returnColumnSizes);
         swap(&nums[start], &nums[i]);
     }
 }
