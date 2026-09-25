@@ -35,7 +35,7 @@ This repository contains my solutions to LeetCode problems that I solve regularl
 
 Currently solving problems primarily using:
 
-* C
+* C, C++
 
 ## 🧠 Solution Approach
 
