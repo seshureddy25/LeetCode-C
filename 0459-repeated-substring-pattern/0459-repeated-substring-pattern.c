@@ -7,8 +7,7 @@ bool repeatedSubstringPattern(char* s) {
         bool valid = true;
         for (int i = len; i < n; i++) 
         {
-            if (s[i] != s[i % len]) 
-            {
+            if (s[i] != s[i % len]) {
                 valid = false;
                 break;
             }
