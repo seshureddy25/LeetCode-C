@@ -1,6 +1,3 @@
-#include <stdlib.h>
-#include <string.h>
-
 char* removeOuterParentheses(char* s)
 {
     char *result = malloc(strlen(s) + 1);
