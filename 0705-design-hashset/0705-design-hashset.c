@@ -1,6 +1,3 @@
-#include <stdlib.h>
-#include <stdbool.h>
-
 typedef struct {
     bool *hash;
 } MyHashSet;
