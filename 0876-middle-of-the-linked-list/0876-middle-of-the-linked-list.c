@@ -21,7 +21,7 @@ struct ListNode* middleNode(struct ListNode* head) {
         temp=temp->next;
         i++;
     }
-    struct ListNode*n=malloc(sizeof(struct ListNode));
-    n=temp;
-    return n;
+    // struct ListNode*n=malloc(sizeof(struct ListNode));
+    // n=temp;
+    return temp;
 }
